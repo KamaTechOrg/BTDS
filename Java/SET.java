@@ -1,3 +1,4 @@
+package com.lmscoder.ds;
 
 import java.util.HashSet;
 import java.util.Iterator;
@@ -48,7 +49,8 @@ public class SET<T> implements Iterable<T> {
     
         Iterator<T> it = set.iterator();
         while (it.hasNext()) {
-            sb.append(it.next());
+            Object elem = it.next();
+            sb.append(elem instanceof String ? "\"" + elem + "\"" : elem);
             if (it.hasNext()) sb.append(',');   // avoid trailing comma
         }
     

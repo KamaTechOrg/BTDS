@@ -9,8 +9,6 @@
 #define Queue_DATA_TYPE int
 #endif
 
-#define Queue_PARSE_FUN CAT(Queue_DATA_TYPE, _Parse)
-#define Queue_FREE_ELEMENT_FUN CAT(Queue_DATA_TYPE, _Free)
 
 typedef struct {
     Queue_DATA_TYPE* data;

@@ -12,10 +12,6 @@
 #define ARR_DATA_TYPE int
 #endif
 
-#define ARR_PARSE_FUN CAT(ARR_DATA_TYPE, _Parse)
-#define ARR_FREE_ELEMENT_FUN CAT(ARR_DATA_TYPE, _Free)
-#define ARR_ELEM_COPY CAT(ARR_DATA_TYPE, _Copy)
-
 typedef struct {
     ARR_DATA_TYPE* data;        // Flattened array storing elements in row-major order
     uint64_t* dimensions;         // ARR storing size of each dimension

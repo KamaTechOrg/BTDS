@@ -10,9 +10,6 @@
 #define Heap_DATA_TYPE int
 #endif
 
-#define Heap_PARSE_FUN CAT(Heap_DATA_TYPE, _Parse)
-#define Heap_FREE_ELEMENT_FUN CAT(Heap_DATA_TYPE, _Free)
-
 typedef struct {
     Heap_DATA_TYPE* data;
     int size;

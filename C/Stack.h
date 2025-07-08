@@ -9,11 +9,6 @@
 #define Stack_DATA_TYPE int
 #endif
 
-#define Stack_PARSE_FUN CAT(Stack_DATA_TYPE, _Parse)
-#define Stack_FREE_ELEMENT_FUN CAT(Stack_DATA_TYPE, _Free)
-
-
-
 typedef struct {
     Stack_DATA_TYPE* data;
     int top;

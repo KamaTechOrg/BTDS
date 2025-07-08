@@ -1,3 +1,4 @@
+package com.lmscoder.ds;
 
 public class DLL<T> {
     public static class Node<T> {
@@ -51,7 +52,7 @@ public class DLL<T> {
         Node<T> current = head;
 
         while (current != null) {
-            sb.append(current.data);
+            sb.append(current.data instanceof String ? "\"" + current.data + "\"" : current.data);
             current = current.next;
             if (current != null) {
                 sb.append(", ");

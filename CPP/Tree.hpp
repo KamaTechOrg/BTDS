@@ -37,8 +37,10 @@ void print_tree_node(const typename Tree<T>::Node *node, std::ostream &os,
   }
 }
 
-template <typename T>
-std::ostream &operator<<(std::ostream &os, const Tree<T> &tree) {
-  print_tree_node<T>(tree.root.get(), os);
+
+template<class Stream, typename T>
+Stream& operator<<(Stream& os, const Tree<T>& t) {
+  t.print_tree_node<T>(tree.root.get(), os);
   return os;
 } 
+

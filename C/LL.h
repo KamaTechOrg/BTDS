@@ -10,8 +10,8 @@
 #define LL_DATA_TYPE int
 #endif
 
-#define LL_PARSE_FUN CAT(LL_DATA_TYPE, _Parse)
 #define LL_FREE_ELEMENT_FUN CAT(LL_DATA_TYPE, _Free)
+#define LL_ELEM_COPY CAT(LL_DATA_TYPE, _Copy)
 #define LL_ELEM_CMP CAT(LL_DATA_TYPE, _CMP)
 
 

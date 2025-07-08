@@ -1,3 +1,4 @@
+package com.lmscoder.ds;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -75,7 +76,14 @@ public class BT<T> {
         StringBuilder sb = new StringBuilder("BT(");
         for (int i = 0; i <= lastDataPos; i++) {
             Object v = level.get(i);
-            sb.append(v == null ? "X" : v.toString()).append(',');
+            if (v == null) {
+                sb.append(" ");
+            } else if (v instanceof String) {
+                sb.append("\"").append(v).append("\"");
+            } else {
+                sb.append(v);
+            }
+            sb.append(',');
         }
         sb.setLength(sb.length() - 1); // drop final comma
         sb.append(')');

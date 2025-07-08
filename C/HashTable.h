@@ -13,18 +13,9 @@
 #define HT_KEY_DATA_TYPE int
 #endif
 
-#define HT_KEY_PARSE_FUN CAT(HT_KEY_DATA_TYPE, _Parse)
-#define HT_KEY_FREE_ELEMENT_FUN CAT(HT_KEY_DATA_TYPE, _Free)
-#define HT_KEY_CMP CAT(HT_KEY_DATA_TYPE, _CMP)
-#define HT_HASH_FUN CAT(HT_KEY_DATA_TYPE, _hash_function)
-
 #ifndef HT_VALUE_DATA_TYPE
 #define HT_VALUE_DATA_TYPE int
 #endif
-
-#define HT_VALUE_PARSE_FUN CAT(HT_VALUE_DATA_TYPE, _Parse)
-#define HT_VALUE_FREE_ELEMENT_FUN CAT(HT_VALUE_DATA_TYPE, _Free)
-#define HT_VALUE_CMP CAT(HT_VALUE_DATA_TYPE, _CMP)
 
 
 typedef struct HTEntry {

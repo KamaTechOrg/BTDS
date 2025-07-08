@@ -1,3 +1,4 @@
+package com.lmscoder.ds;
 
 public class LL<T> {
     public static class Node<T> {
@@ -39,7 +40,7 @@ public class LL<T> {
         StringBuilder sb = new StringBuilder("LL(");
         Node<T> current = head;
         while (current != null) {
-            sb.append(current.data);
+            sb.append(current.data instanceof String ? "\"" + current.data + "\"" : current.data);
             if (current.next != null) {
                 sb.append(",");
             }

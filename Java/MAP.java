@@ -1,3 +1,4 @@
+package com.lmscoder.ds;
 
 import java.util.HashMap;
 
@@ -43,9 +44,11 @@ public class MAP<K, V> {
         java.util.Iterator<java.util.Map.Entry<K,V>> it = map.entrySet().iterator();
         while (it.hasNext()) {
             java.util.Map.Entry<K,V> e = it.next();
-            sb.append(e.getKey())
+            Object key = e.getKey();
+            Object value = e.getValue();
+            sb.append(key instanceof String ? "\"" + key + "\"" : key)
               .append(':')
-              .append(e.getValue());
+              .append(value instanceof String ? "\"" + value + "\"" : value);
             if (it.hasNext()) sb.append(',');       // no trailing comma
         }
     

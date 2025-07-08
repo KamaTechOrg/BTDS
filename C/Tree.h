@@ -11,12 +11,6 @@
 #define Tree_DATA_TYPE int
 #endif
 
-#define Tree_PARSE_FUN CAT(Tree_DATA_TYPE, _Parse)
-#define Tree_FREE_FUN CAT(Tree_DATA_TYPE, _Free)
-#define Tree_COPY_FUN CAT(Tree_DATA_TYPE, _Copy)
-#define Tree_CMP_FUN CAT(Tree_DATA_TYPE, _CMP)
-
-
 // Tree node structure
 typedef struct TreeNode {
 	Tree_DATA_TYPE data;

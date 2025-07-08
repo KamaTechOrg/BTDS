@@ -6,10 +6,8 @@
 
 // Inherit data type and operations from Tree
 #define AVL_DATA_TYPE Tree_DATA_TYPE
-#define AVL_PARSE_FUN Tree_PARSE_FUN
-#define AVL_FREE_FUN Tree_FREE_FUN
-#define AVL_COPY_FUN Tree_COPY_FUN
-#define AVL_CMP_FUN Tree_CMP_FUN
+#define AVL_COPY_FUN VAL_COPY(Tree)
+#define AVL_CMP_FUN VAL_CMP(Tree)
 
 // Use Tree types
 typedef TreeNode AVLTreeNode;

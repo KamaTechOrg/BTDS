@@ -1,5 +1,5 @@
-#ifndef DISJOINT_SET_H
-#define DISJOINT_SET_H
+#ifndef DISJOINT_Set_H
+#define DISJOINT_Set_H
 
 #include "data_types_config.h"
 #include "POD_Utils.h"
@@ -24,4 +24,4 @@ void disjoint_set_Free(DisjointSet* ds);
 int disjoint_set_find(DisjointSet* ds, DS_DATA_TYPE element);
 bool disjoint_set_union(DisjointSet* ds, DS_DATA_TYPE x, DS_DATA_TYPE y);
 
-#endif // DISJOINT_SET_H
+#endif // DISJOINT_Set_H

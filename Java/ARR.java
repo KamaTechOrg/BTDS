@@ -1,3 +1,4 @@
+package com.lmscoder.ds;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,7 +26,7 @@ public class ARR<T> {
     public String toString() {
         StringBuilder sb = new StringBuilder("[");
         for (int i = 0; i < elements.size(); i++) {
-            sb.append(elements.get(i));
+            sb.append(elements.get(i) instanceof String ? "\"" + elements.get(i) + "\"" : elements.get(i));
             if (i < elements.size() - 1) {
                 sb.append(",");
             }

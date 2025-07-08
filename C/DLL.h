@@ -1,9 +1,10 @@
 #ifndef DLL_H
 #define DLL_H
 
-#include <stdbool.h>
+#include "data_types_config.h"
 #include "POD_Utils.h"
 
+#include <stdbool.h>
 #include <stdlib.h>
 #include <stdbool.h>
 
@@ -11,8 +12,8 @@
 #define DLL_DATA_TYPE int
 #endif
 
-#define DLL_PARSE_FUN CAT(DLL_DATA_TYPE, _Parse)
 #define DLL_FREE_ELEMENT_FUN CAT(DLL_DATA_TYPE, _Free)
+#define DLL_ELEM_COPY CAT(DLL_DATA_TYPE, _Copy)
 #define DLL_ELEM_CMP CAT(DLL_DATA_TYPE, _CMP)
 
 

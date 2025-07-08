@@ -21,17 +21,14 @@
 typedef Tree BST;
 typedef TreeNode BSTNode;
 
-#ifndef BST_PARSE_FUN
-#define BST_PARSE_FUN Tree_PARSE_FUN
-#endif
 #ifndef BST_FREE_ELEMENT_FUN
-#define BST_FREE_ELEMENT_FUN Tree_FREE_FUN
+#define BST_FREE_ELEMENT_FUN VAL_FREE(Tree)
 #endif
 #ifndef BST_COPY_ELEMENT_FUN
-#define BST_COPY_ELEMENT_FUN Tree_COPY_FUN
+#define BST_COPY_ELEMENT_FUN VAL_COPY(Tree)
 #endif
 #ifndef BST_CMP_FUN
-#define BST_CMP_FUN Tree_CMP_FUN
+#define BST_CMP_FUN VAL_CMP(Tree)
 #endif
 
 BST* BST_Create();
