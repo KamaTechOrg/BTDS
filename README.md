@@ -1,4 +1,4 @@
-# BTDS
+# BooTcampDataStructures
 
 הערה חשובה ביותר לכותבות ב C : 
 
